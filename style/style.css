@@ -1,0 +1,40 @@
+.box1 {
+    width: 200px;
+    height: 300px;
+    background-image: linear-gradient(135deg, yellow, lightgreen,lightblue);
+}
+
+.box2 {
+    width: 200px;
+    height: 300px;
+    background-image: linear-gradient(to top left, red 20%, darkred 50%, black 70%);
+
+}
+
+.box3 {
+    width: 200px;
+    height: 300px;
+    background-image: radial-gradient( circle at top right,  rgb(0, 251, 255), orange , lightgrey );
+
+}
+
+.box4 {
+    width: 400px;
+    height: 300px;
+    background-image: radial-gradient( ellipse at center,  pink, red , purple );
+
+}
+
+.box5 {
+    width: 400px;
+    height: 300px;
+    background-image: repeating-linear-gradient( to left,  yellow,yellow 30px , lightgreen,lightgreen 60px );
+
+}
+
+.shadow-box {
+    width: 400px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow:  15px 55px 80px 8px , 20px 20px 50px 8px greenyellow, 30px 30px 30px 8px blue;
+}
