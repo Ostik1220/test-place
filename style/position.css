@@ -1,0 +1,46 @@
+.containre{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: blanchedalmond;
+    margin: 50px auto;
+    box-shadow: 1px 2px 3px 5px rgb(72, 160, 174);
+}
+
+.box{
+    box-shadow: 1px 2px 3px 5px rgb(8, 0, 255);
+    height: 100px;
+    width: 100px;
+}
+
+.box:nth-child(1){
+    background-color: brown;
+    z-index: 1;
+}
+
+.box:nth-child(2) {
+    background-color: yellowgreen;
+    position: absolute;
+    right: 580px;
+    z-index: 3;
+    bottom: 380px;
+}
+
+.box:nth-child(3) {
+    background-color: khaki;
+    z-index: 2;
+}
+
+.link{
+    color: fuchsia;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.fixx{
+    position: fixed;
+    color: red;
+    background-color:blue;
+}
