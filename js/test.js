@@ -18,5 +18,7 @@ console.log(typeof number)
 // const response = confirm(city)
 // console.log(response)
 
-const harry = prompt("Хто такий гарі потер?");
-console.log(harry)
+// const harry = prompt("Хто такий гарі потер?");
+// console.log(harry)
+
+console.log(5**2)
