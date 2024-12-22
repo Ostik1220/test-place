@@ -15,8 +15,8 @@ console.log(typeof number)
 
 // alert(myFirstMessege)
 
-// const response = confirm(city)
-// console.log(response)
+const response = confirm(city)
+console.log(response)
 
 // const harry = prompt("Хто такий гарі потер?");
 // console.log(harry)
