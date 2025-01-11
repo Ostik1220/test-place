@@ -1,6 +1,6 @@
 // const car = {
 //     wheels: 4,
-//     headlights:4, 
+//     headlights:4,
 //     salon: "leather",
 //     title: "BMW A5"
 // }
@@ -18,7 +18,6 @@
 // bmwX3.color = "red"
 // console.log(bmwX3Andrew)
 
-
 // для того щоб перевикористовувати модель для ексемплярів придумади функції - конструктори
 
 // const Car = function () {
@@ -35,52 +34,84 @@
 
 //перепишемо цю функцію на класс
 
-class Car {
-    constructor(info) {
-        const {wheels, headlights, model, price} = info
-        //функція в якій ми зберігаємо дані якщо ми її створили тто вона автоматично створется і буде порожьньою
-        this.wheels = wheels;
-            this.headlights = headlights;
-            this.model = model;
-            this.price = price;
-    }
-    showinfo() {
-        return`автомобіль марки ${this.model} має ${this.wheels} колеса, ${this.headlights} фари за ціною ${this.price}`
-    }
-}
+// class Car {
+//     constructor(info) {
+//         const {wheels, headlights, model, price} = info
+//         //функція в якій ми зберігаємо дані якщо ми її створили тто вона автоматично створется і буде порожьньою
+//         this.wheels = wheels;
+//             this.headlights = headlights;
+//             this.model = model;
+//             this.price = price;
+//     }
+//     showinfo() {
+//         return`автомобіль марки ${this.model} має ${this.wheels} колеса, ${this.headlights} фари за ціною ${this.price}`
+//     }
+// }
 
-const info = {
-    wheels: 4,
-    headlights: 2,
-    model: 'BMW AA8',
-    price: 1500000
-}
+// const info = {
+//     wheels: 4,
+//     headlights: 2,
+//     model: 'BMW AA8',
+//     price: 1500000
+// }
 
-const bmw = new Car(info)
-console.log(bmw.showinfo())
+// const bmw = new Car(info)
+// console.log(bmw.showinfo())
 
 //====================================================================
 
-class Ork {
-    constructor({orkName, orkPoints, orkSkinColor, orkWeapon}) {
-        this.name = orkName;
-        this.points = orkPoints;
-        this.skincolor = orkSkinColor;
-        this.weapons = orkWeapon;
-    }
-    orkAttacks(){
-        this.points += 50
-        return `Ork ${this.name} attack elf with ${this.weapons} and has ${this.points}`
-    }
-    showOrkPoints(){
-        return `Ork ${rhis.name} has ${this.points}`
-    }
+class Hero {
+  constructor(heroName, heroPoints) {
+    this.name = heroName;
+    this.points = heroPoints;
+  }
+  showInfo() {
+    return `hero name is ${this.name} and have ${this.points} points`;
+  }
 }
 
+class Ork extends Hero {
+  constructor({ OrkName, orkPoints, orkSkinColor, orkWeapon }) {
+    super(OrkName, orkPoints);
+    this.skincolor = orkSkinColor;
+    this.weapons = orkWeapon;
+
+  }
+  orkAttacks() {
+    this.points += 50;
+    return `Ork ${this.name} attack elf with ${this.weapons} and has ${this.points}`;
+  }
+  showOrkPoints() {
+    return `Ork ${rhis.name} has ${this.points}`;
+  }
+}
+
+const orkRufus = new Ork({
+  orkName: "Rufus",
+  orkPoints: 100,
+  orkSkinColor: "Green",
+  orkWeapon: "sword",
+});
 
 
 
-const orkRufus = new Ork({orkName: 'Rufus', orkPoints: 100, orkSkinColor: 'Green', orkWeapon: 'sword'})
+class Elf extends Hero {
+  constructor(elfLife, elfEarSize) {
+    super(elfName, elfPoints);
+    this.life = elfLife;
+    this.earSize = elfEarSize;
+  }
+  elfFight(){
+    return`elf ${this.name} fight Ork and get ${this.points} points`
+  }
+}
+
+const elfRoland = new Elf({
+  elfName: "Roland",
+  elfPoints: 200,
+  elfLife: 560,
+  elfEarSize: "15cm",
+});
 
 // console.log(showOrkPoints())
 // console.log(orkAttacks())
