@@ -35,29 +35,31 @@
 
 //перепишемо цю функцію на класс
 
-// class Car {
-//     constructor(info) {
-//         const {wheels, headlights, model, price} = info
-//         //функція в якій ми зберігаємо дані якщо ми її створили тто вона автоматично створется і буде порожьньою
-//         this.wheels = wheels;
-//             this.headlights = headlights;
-//             this.model = model;
-//             this.price = price;
-//     }
-//     showinfo() {
-//         return`автомобіль марки ${this.model} має ${this.wheels} колеса, ${this.headlights} фари за ціною ${this.price}`
-//     }
-// }
+class Car {
+    constructor(info) {
+        const {wheels, headlights, model, price} = info
+        //функція в якій ми зберігаємо дані якщо ми її створили тто вона автоматично створется і буде порожьньою
+        this.wheels = wheels;
+            this.headlights = headlights;
+            this.model = model;
+            this.price = price;
+    }
+    showinfo() {
+        return`автомобіль марки ${this.model} має ${this.wheels} колеса, ${this.headlights} фари за ціною ${this.price}`
+    }
+}
 
-// const info = {
-//     wheels: 4,
-//     headlights: 2,
-//     model: 'BMW AA8',
-//     price: 1500000
-// }
+const info = {
+    wheels: 4,
+    headlights: 2,
+    model: 'BMW AA8',
+    price: 1500000
+}
 
-// const bmw = new Car(info)
-// console.log(bmw.showinfo())
+const bmw = new Car(info)
+console.log(bmw.showinfo())
+
+//====================================================================
 
 class Ork {
     constructor({orkName, orkPoints, orkSkinColor, orkWeapon}) {
