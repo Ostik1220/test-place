@@ -1,0 +1,13 @@
+.test{
+    border: 2px dashed skyblue;
+}
+
+.second-hand{
+    background-color: aquamarine;
+    border: 4px groove orange;
+}
+
+.link{
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
