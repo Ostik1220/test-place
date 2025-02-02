@@ -17,3 +17,19 @@
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#box{
+    border: 3px solid violet;
+    height: 300px;
+    width: 300px;
+}
+
+#event-practic {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

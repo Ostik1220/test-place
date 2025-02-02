@@ -81,8 +81,7 @@ inputElement.addEventListener("blur", (e) => {
 
 //змінення фону бокса по клавішах
 const boxElement = document.querySelector("#box");
-boxElement.style.width = "100px";
-boxElement.style.height = "100px";
+
 document.addEventListener("keydown", (e) => {
   if (e.code === "keyO") {
     document.body.style.backgroundColor = "orange";
@@ -96,3 +95,31 @@ document.addEventListener("keydown", (e) => {
     document.body.style.backgroundColor = "white";
   }
 }); //глючить
+
+
+
+
+//Субота: події миші
+ 
+boxElement.addEventListener("mousemove", (e) => {
+  console.log(e.clientX, e.clientY)
+})
+
+
+
+const redBox = document.querySelector("#event-practic")
+let x = 5
+let y = 5
+document.addEventListener("keydown", (e) => {
+  redBox.style.transform = `translate(${x}px, ${y}px)`
+  if(e.code === 'ArrowRight'){
+x += 5
+  } else if (e.code === 'ArrowLeft'){
+    x -= 5
+  }
+   if (e.code === 'ArrowUp'){
+    y -= 5
+  } else if (e.code === 'ArrowDown'){
+    y += 5
+  }
+})
