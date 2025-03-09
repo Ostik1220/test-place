@@ -1,0 +1,79 @@
+.title-pizza{
+    color: burlywood;
+font-size: x-large;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item{
+    width: 450px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+}
+
+.pizza-button{
+padding: 10px;
+border-radius: 5px;
+background-color: cornsilk;
+color: coral;
+border: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.607);
+    pointer-events: none;
+    display: none;
+}
+
+.modal{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 550px;
+    background-color: chocolate;
+    text-align: center;
+    border-radius: 5px;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close{
+    rotate: 45deg;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: bisque;
+}

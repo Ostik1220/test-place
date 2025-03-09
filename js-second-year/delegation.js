@@ -1,5 +1,5 @@
 const article = document.querySelector(".delegation");
-article.style.background = "purple";
+article.style.background = "brown";
 article.addEventListener("click", (e) => {
   console.log(e.target, "це target");
   console.log(e.currentTarget, "це current target");
@@ -49,7 +49,9 @@ return `        <li class="item">
             <h2 class="name">${pizza.title}</h2>
             <img src="${pizza.photo}" alt="" class="photo">
             <p class="price">${pizza.price}</p>
+            <button class="pizza-button" type="button">детальніше..</button>
         </li>`
+
 })
 console.log(pizzaElements)
 
@@ -57,3 +59,6 @@ const pizzaDom = pizzaElements.join("")
 console.log(pizzaElements)
 const list = document.querySelector(".list")
 list.innerHTML = pizzaDom
+
+const openButtob = document.querySelector(".pizza-button")
+const backdrop
