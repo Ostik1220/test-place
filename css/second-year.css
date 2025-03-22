@@ -78,8 +78,40 @@ border: none;
     color: bisque;
 } */
 
-.library{
+/* .library{
     width: 250px;
       height: 250px;
 
+} */
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+
+}
+
+.item{
+    width: 500px;
+    height: 500px;
+    box-shadow: 4px 14px 10px rgb(251, 255, 0);
+    background-color: greenyellow;
+    padding-top: 107px;
+    transition-duration: 250ms;
+    transform: translateX(-100px);
+
+}
+
+.article1{
+    transition-duration: 2000ms;
+    box-shadow: 4px 14px 10px blue;
+    transform: rotate(360deg) translateX(0);
+}
+
+.article{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: darkblue;
+background-color: chartreuse;
 }
