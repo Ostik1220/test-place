@@ -115,3 +115,21 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: darkblue;
 background-color: chartreuse;
 }
+
+#localstorage__form{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.localstorage__button{
+    border: none;
+    color: blanchedalmond;
+    background-color: black;
+}
