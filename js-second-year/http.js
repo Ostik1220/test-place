@@ -12,3 +12,5 @@ return list
 }
 
 fetch("https://api.github.com/users").then(response => response.json()).then(data => document.querySelector(".http-list").innerHTML = listMaker(data))
+
+
