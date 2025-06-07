@@ -133,3 +133,28 @@ background-color: chartreuse;
     color: blanchedalmond;
     background-color: black;
 }
+
+.pagination-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    list-style: none;
+    background-color: brown;
+    padding: 10px;
+}
+
+
+.pagination-item{
+    padding: 5px;
+    border: 1px solid ;
+    width: 300px;
+    height: 110px;
+    background-color:crimson;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pagination-load-more{
+    background-color: orange;
+}
