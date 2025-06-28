@@ -44,6 +44,7 @@
 //   },
 // ];
 
+
 // const pizzaElements = pizzaData.map((pizza) => {
 // return `        <li class="item">
 //             <h2 class="name">${pizza.title}</h2>
